@@ -1,0 +1,135 @@
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+
+a:hover { text-decoration: none }
+
+.slide-area{
+    background-image: url(../img/bg-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-color: #333;
+}
+
+.slide-area-bg{
+    background-image: url(../img/bg-2.jpg);
+    height: 100%;
+}
+
+.section-padding {
+    background-color: #222931;
+    color: #c0c1c0;
+    position: relative;
+    z-index: 1;
+    padding: 170px;
+  }
+
+  .slide-content {
+    position: relative;
+    padding-left: 40px;
+    padding-right: 100px;
+  }
+
+  .slide-content h3 {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #fff;
+  }
+
+  .slide-content p {
+    font-size: 14px;
+    line-height: 2;
+  }
+
+  .boder-btt {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    border: 1px solid;
+    padding: 10px 15px;
+    display: inline-block;
+    margin-top: 20px;
+  }
+
+  .boder-btt:hover{
+      color: #fff;
+  }
+
+.section-padding::before {
+    content: "";
+    position: absolute;
+    left: 47%;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #222931;
+    transform: rotate(90deg);
+}
+
+.section-padding.absulet-left::before {
+    left: calc(50.5% - 50px);
+    transform: rotate(270deg);
+}
+
+  .slide-content:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100px;
+    background-color: #767a7f;
+  }
+
+  .slide-area {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 570px;
+    z-index: -1;
+  }
+
+  .slide-area-bg {
+    right: auto;
+    left: 0;
+  }
+
+  .absulet-left .slide-content {
+    margin-left: 100px;
+    padding-right: 0;
+  }
+
+  .slide-area::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: .5;
+  }
